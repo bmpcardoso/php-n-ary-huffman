@@ -43,7 +43,7 @@ and
 // @param $tree the Huffman encoding tree
 // @param $target_alphabet an array containing the symbols of the target alphabet (binary would be [0,1])
 // @returns an object with two properties: 
-//   "encoding" - an associative array from symbols in the original alphabet to the code written in the target alphabet, and
+//   "encoding" - an associative array from symbols in the original alphabet to the code written in the target alphabet
 //   "decoding" - vice-versa
 NAryHuffman::get_coding_tables( $tree, $target_alphabet )
 ```
