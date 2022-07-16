@@ -1,5 +1,5 @@
 # php-n-ary-huffman
-A PHP implementation of the n-ary Huffman coding.
+A PHP implementation of Huffman's coding, n-ary variant.
 
 ## What is it?
 Huffman coding was proposed in a paper by David A. Huffman, "*A Method for the Construction of Minimum-Redundancy Codes*", back in 1952 (link [here](https://ieeexplore.ieee.org/document/4051119)). It is an algorithm for lossless data compression based on prefix codes - i.e., the code used to represent a symbol is never a prefix in any of the codes representing other symbols (...otherwise, chaos would ensue). You can find more information in the algorithm's Wikipedia [page](https://en.wikipedia.org/wiki/Huffman_coding).
