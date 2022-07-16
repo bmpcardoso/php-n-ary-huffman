@@ -2,13 +2,11 @@
 A PHP implementation of the n-ary Huffman coding.
 
 ## What is it?
-Huffman coding was proposed in a paper by David A. Huffman, "*A Method for the Construction of Minimum-Redundancy Codes*", back in 1952 (link [here](https://ieeexplore.ieee.org/document/4051119)). It is an algorithm for lossless data compression based on prefix codes (i.e., the code used to represent a symbol is never a prefix in any of the codes representing any other symbol). You can find more information in the Wikipedia [page](https://en.wikipedia.org/wiki/Huffman_coding).
+Huffman coding was proposed in a paper by David A. Huffman, "*A Method for the Construction of Minimum-Redundancy Codes*", back in 1952 (link [here](https://ieeexplore.ieee.org/document/4051119)). It is an algorithm for lossless data compression based on prefix codes - i.e., the code used to represent a symbol is never a prefix in any of the codes representing other symbols (...otherwise, chaos would ensue). You can find more information in the algorithm's Wikipedia [page](https://en.wikipedia.org/wiki/Huffman_coding).
 
-While the most common form of Huffman encoding is binary - a way to compress information from a given alphabet (arbitrary collection of symbols) into an optimal binary (0/1) representation -, this is an implementation of its n-ary variant, compressing information from a given alphabet into an optimal, n-ary representation composed of n symbols.
+The most common form of Huffman encoding is binary: a way to compress information from a given alphabet (an arbitrary collection of symbols) into an optimal binary {0,1} representation. This is an implementation of the algorithm's n-ary variant, which maps information from a given alphabet into an optimal representation composed of n symbols (thus n-ary).
 
 ## Algorithm
-This algorithm is an adaptation of Tewi's D-ary Huffman Coding ([here](https://github.com/Tewi/PrefixFreeCodes/wiki/D%E2%80%90ary-Huffman-Coding)) - kudos, Tewi! It goes like this:
-
 For an input message `MSG` and an output alphabet of `N` symbols: 
 
 1. Get the frequency of all symbols in `MSG`
